@@ -246,7 +246,7 @@ h1{
     bottom:0;
     top:0;
     margin:auto;
-    animation:circle-anime linear 10s infinite;
+    animation:circle-anime linear 7s infinite;
     z-index:10;
 }
 .frontend-box-circle{
@@ -267,7 +267,7 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    animation:frontend-box-anime linear 10s infinite;
+    animation:frontend-box-anime linear 7s infinite;
     text-align:center;
     color:#151515;
     margin:auto;
@@ -290,7 +290,7 @@ h1{
     margin:auto;
     position:absolute;
     border-radius:50px;
-    animation:content-box-anime linear 10s infinite;
+    animation:content-box-anime linear 7s infinite;
     z-index:-100;
 }
 .frontend-html{
@@ -319,7 +319,7 @@ h1{
     bottom:0;
     top:0;
     margin:auto;
-    animation:circle-anime linear 15s infinite;
+    animation:circle-anime linear 13s infinite;
 }
 .backend-box-circle{
     width:500px;
@@ -339,7 +339,7 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    animation:backend-box-anime linear 15s infinite;
+    animation:backend-box-anime linear 13s infinite;
     text-align:center;
     color:#151515;
     margin:auto;
@@ -362,7 +362,7 @@ h1{
     margin:auto;
     position:absolute;
     border-radius:50px;
-    animation:content-box-anime linear 15s infinite;
+    animation:content-box-anime linear 13s infinite;
     z-index:20;
     padding:5px;
 }
@@ -382,7 +382,6 @@ h1{
     bottom:-30px;
 }
 
-
 .others-circle{
     width:700px;
     height:700px;
@@ -394,7 +393,7 @@ h1{
     bottom:0;
     top:0;
     margin:auto;
-    animation:circle-anime linear 20s infinite;
+    animation:circle-anime linear 17s infinite;
     z-index:10;
 }
 .others-box-circle{
@@ -415,7 +414,7 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    animation:others-box-anime linear 20s infinite;
+    animation:others-box-anime linear 17s infinite;
     text-align:center;
     color:#151515;
     margin:auto;
@@ -438,7 +437,7 @@ h1{
     margin:auto;
     position:absolute;
     border-radius:50px;
-    animation:content-box-anime linear 20s infinite;
+    animation:content-box-anime linear 17s infinite;
     z-index:-100;
     padding:5px;
 }
@@ -461,6 +460,433 @@ h1{
     left:0;
     right:0;
     top:-50px;
+}
+
+@media screen and (max-width: 540px) {
+    .tech-stack-div{
+        width:100%;
+        height:70vh;
+        padding:0px;
+    }
+    .tech-stack-div h3{
+        font-size:.8em;
+    }
+    .frontend-circle{
+        width:150px;
+        height:150px;
+    }
+    .frontend-box-circle{
+        width:150px;
+        height:150px;
+    }
+    .frontend-box{
+        width:60px;
+        height:60px;
+        top:-20px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .frontend-content-box{
+        width:40px;
+        height:40px;
+        padding:3px;
+    }
+    .frontend-html{
+        left:-20px;
+    }
+    .frontend-css{
+        right:-20px;
+    }
+    .frontend-js{
+        bottom:-20px;
+    }
+
+    .backend-circle{
+        width:250px;
+        height:250px;
+    }
+    .backend-box-circle{
+        width:250px;
+        height:250px;
+    }
+    .backend-box{
+        width:63px;
+        height:63px;
+        top:-28px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .backend-content-box{
+        width:45px;
+        height:45px;
+        padding:3px;
+    }
+    .backend-python{
+        left:-25px;
+    }
+    .backend-django{
+        right:-25px;
+    }
+    .django-svg{
+        width:16px !important;
+        height:16px !important;
+    }
+
+    .others-circle{
+        width:340px;
+        height:340px;
+    }
+    .others-box-circle{
+        width:340px;
+        height:340px;
+    }
+    .others-box{
+        width:65px;
+        height:65px;
+        top:-35px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .others-content-box{
+        width:50px;
+        height:50px;
+        padding:2px;
+    }
+    .others-github{
+        left:-30px;
+    }
+    .others-tailwind{
+        right:-30px;
+    }
+    .others-jquery{
+        top:-30px;
+    }
+    .others-postgresql{
+        bottom:-30px;
+    }
+    .jquery-image{
+        width:16px !important;
+        height:16px !important;
+    }
+    .tailwind-image{
+        width:16px !important;
+        height:16px !important;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width:720px) {
+    .tech-stack-div{
+        width:90%;
+        height:80vh;
+        padding:0px;
+    }
+    .tech-stack-div h3{
+        font-size:.9em;
+    }
+    .frontend-circle{
+        width:170px;
+        height:170px;
+    }
+    .frontend-box-circle{
+        width:170px;
+        height:170px;
+    }
+    .frontend-box{
+        width:65px;
+        height:65px;
+        top:-25px;
+        box-shadow:0px 0px 10px 10px #202020;
+    }
+    .frontend-content-box{
+        width:45px;
+        height:45px;
+        padding:5px;
+    }
+    .frontend-html{
+        left:-25px;
+    }
+    .frontend-css{
+        right:-25px;
+    }
+    .frontend-js{
+        bottom:-25px;
+    }
+
+    .backend-circle{
+        width:300px;
+        height:300px;
+    }
+    .backend-box-circle{
+        width:300px;
+        height:300px;
+    }
+    .backend-box{
+        width:65px;
+        height:65px;
+        top:-30px;
+        box-shadow:0px 0px 15px 5px #202020;
+    }
+    .backend-content-box{
+        width:50px;
+        height:50px;
+        padding:5px;
+    }
+    .backend-python{
+        left:-30px;
+    }
+    .backend-django{
+        right:-30px;
+    }
+    .django-svg{
+        width:18px !important;
+        height:18px !important;
+    }
+
+    .others-circle{
+        width:450px;
+        height:450px;
+    }
+    .others-box-circle{
+        width:450px;
+        height:450px;
+    }
+    .others-box{
+        width:70px;
+        height:70px;
+        top:-35px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .others-content-box{
+        width:55px;
+        height:55px;
+        padding:5px;
+    }
+    .others-github{
+        left:-35px;
+    }
+    .others-tailwind{
+        right:-35px;
+    }
+    .others-jquery{
+        top:-35px;
+    }
+    .others-postgresql{
+        bottom:-35px;
+    }
+    .jquery-image{
+        width:18px !important;
+        height:18px !important;
+    }
+    .tailwind-image{
+        width:18px !important;
+        height:18px !important;
+    }
+}
+
+
+@media screen and (min-width: 721px) and (max-width:1000px) {
+    .tech-stack-div{
+        width:90%;
+        height:80vh;
+        padding:0px;
+    }
+    .tech-stack-div h3{
+        font-size:1em;
+    }
+    .frontend-circle{
+        width:240px;
+        height:240px;
+    }
+    .frontend-box-circle{
+        width:240px;
+        height:240px;
+    }
+    .frontend-box{
+        width:65px;
+        height:65px;
+        top:-25px;
+        padding:5px;
+        box-shadow:0px 0px 10px 10px #202020;
+    }
+    .frontend-content-box{
+        width:50px;
+        height:50px;
+        padding:5px;
+    }
+    .frontend-html{
+        left:-25px;
+    }
+    .frontend-css{
+        right:-25px;
+    }
+    .frontend-js{
+        bottom:-25px;
+    }
+
+    .backend-circle{
+        width:410px;
+        height:410px;
+    }
+    .backend-box-circle{
+        width:410px;
+        height:410px;
+    }
+    .backend-box{
+        width:68px;
+        height:68px;
+        padding:5px;
+        top:-30px;
+        box-shadow:0px 0px 15px 5px #202020;
+    }
+    .backend-content-box{
+        width:55px;
+        height:55px;
+        padding:5px;
+    }
+    .backend-python{
+        left:-30px;
+    }
+    .backend-django{
+        right:-30px;
+    }
+    .django-svg{
+        width:20px !important;
+        height:20px !important;
+    }
+
+    .others-circle{
+        width:580px;
+        height:580px;
+    }
+    .others-box-circle{
+        width:580px;
+        height:580px;
+    }
+    .others-box{
+        width:70px;
+        height:70px;
+        top:-35px;
+        padding:5px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .others-content-box{
+        width:60px;
+        height:60px;
+        padding:5px;
+    }
+    .others-github{
+        left:-35px;
+    }
+    .others-tailwind{
+        right:-35px;
+    }
+    .others-jquery{
+        top:-35px;
+    }
+    .others-postgresql{
+        bottom:-35px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+    .tech-stack-div{
+        width:90%;
+        height:80vh;
+        padding:0px;
+    }
+    .tech-stack-div h3{
+        font-size:1em;
+    }
+    .frontend-circle{
+        width:280px;
+        height:280px;
+    }
+    .frontend-box-circle{
+        width:280px;
+        height:280px;
+    }
+    .frontend-box{
+        width:65px;
+        height:65px;
+        top:-25px;
+        padding:5px;
+        box-shadow:0px 0px 10px 10px #202020;
+    }
+    .frontend-content-box{
+        width:50px;
+        height:50px;
+        padding:5px;
+    }
+    .frontend-html{
+        left:-25px;
+    }
+    .frontend-css{
+        right:-25px;
+    }
+    .frontend-js{
+        bottom:-25px;
+    }
+
+    .backend-circle{
+        width:450px;
+        height:450px;
+    }
+    .backend-box-circle{
+        width:450px;
+        height:450px;
+    }
+    .backend-box{
+        width:68px;
+        height:68px;
+        padding:5px;
+        top:-30px;
+        box-shadow:0px 0px 15px 5px #202020;
+    }
+    .backend-content-box{
+        width:55px;
+        height:55px;
+        padding:5px;
+    }
+    .backend-python{
+        left:-30px;
+    }
+    .backend-django{
+        right:-30px;
+    }
+    .django-svg{
+        width:20px !important;
+        height:20px !important;
+    }
+
+    .others-circle{
+        width:620px;
+        height:620px;
+    }
+    .others-box-circle{
+        width:620px;
+        height:620px;
+    }
+    .others-box{
+        width:70px;
+        height:70px;
+        top:-35px;
+        padding:5px;
+        box-shadow:0px 0px 10px 5px #202020;
+    }
+    .others-content-box{
+        width:60px;
+        height:60px;
+        padding:5px;
+    }
+    .others-github{
+        left:-35px;
+    }
+    .others-tailwind{
+        right:-35px;
+    }
+    .others-jquery{
+        top:-35px;
+    }
+    .others-postgresql{
+        bottom:-35px;
+    }
 }
 
 
