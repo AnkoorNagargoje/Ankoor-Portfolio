@@ -1,10 +1,14 @@
 html{
     scroll-behavior: smooth;
+    max-width:100%;
+    overflow-x:hidden;
 }
 body{
     background-color: #141414;
     color: #cbd5e1;
     margin:0;
+    max-width:100%;
+    overflow-x:hidden;
 }
 a{
     text-decoration:none;
@@ -50,6 +54,13 @@ h1{
     border-image-source: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );
     border-bottom: 4px solid;
     border-image-slice: 1;
+}
+.my-image{
+    width:100%;
+    border-radius:20px;
+    z-index:10;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 .dotted-image-background-1{
     width:300px;
@@ -97,6 +108,93 @@ h1{
     animation-delay: 6s;
     animation-fill-mode: forwards;
 }
+@media screen and (max-width: 1300px), screen and (max-height: 1200px) {
+    .firstdiv{margin-bottom:100px;}
+
+}
+@media screen and (max-width: 780px) {
+    .firstdiv{
+        flex-direction:column;
+        margin-top:0vh;
+        max-height:100vh;
+    }
+    .firstdiv div:nth-child(2){
+        width:70%
+        height:70%;
+        flex: 1;
+        display: flex;
+    }
+    h1{font-size:3em;}
+    p{font-size:1.5em;}
+    .scroll-to-know-more{
+        display:none;
+    }
+    .dotted-image-background-1{
+        width:200px;
+        height:100px;
+        background-size:13px 13px;
+        right:-30px;
+        top:-50px;
+    }
+    .dotted-image-background-2{
+        width:200px;
+        height:100px;
+        background-size:13px 13px;
+        left:-30px;
+        bottom:-50px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1300px) {
+    .firstdiv{
+        flex-direction:column;
+        margin-top:5vh;
+        max-height:80vh;
+        width:60%;
+    }
+    .my-image{
+        width:100%;
+        margin:auto;
+    }
+    .firstdiv div:nth-child(1){
+        margin:auto;
+    }
+    .firstdiv div:nth-child(2){
+        margin:auto;
+        flex: 1;
+        display: flex;
+    }
+    .dotted-image-background-1{
+        width:300px;
+        height:300px;
+        background-size:20px 20px;
+        right:-100px;
+        top:-100px;
+    }
+    .dotted-image-background-2{
+        width:300px;
+        height:300px;
+        background-size:20px 20px;
+        left:-100px;
+        bottom:-100px;
+    }
+}
+
+@media screen and (min-width: 780px), screen and (min-height: 1000px) {
+    .scroll-to-know-more{
+        display:block;
+    }
+    .firstdiv{
+        margin-top:15vh;
+    }
+}
+
+@media screen and (min-width: 1301px){
+    .dotted-image-background-2{
+        display:none;
+    }
+}
+
 .about-me{
     width:80%;
     margin:auto;
@@ -113,6 +211,16 @@ h1{
 .about-me-div h2{
     font-weight:500;
 }
+
+@media screen and (max-width: 780px) {
+    .about-me{
+        width:90%;
+    }
+    .about-me-div{
+        width:80%;
+    }
+}
+
 .tech-stack-div{
     width:70%;
     margin:auto;
@@ -477,3 +585,4 @@ h1{
     -webkit-text-fill-color: transparent;
     transform: translateY(-5px);
 }
+
