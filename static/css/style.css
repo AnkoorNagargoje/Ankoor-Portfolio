@@ -897,8 +897,8 @@ h1{
     margin-bottom:100px;
 }
 .project-card-border{
-    width:500px;
-    max-height:400px;
+    width:40%;
+    max-height:40%;
     display:inline-block;
     margin:auto;
     text-align:center;
@@ -912,12 +912,26 @@ h1{
     box-shadow: 0px 0px 50px 20px #000;
 }
 .project-card{
-    width:460px;
-    max-height:360px;
+    width:39&;
+    max-height:39%;
     background-color:#151515;
     border-radius:23px;
     overflow:hidden;
     padding:20px;
+}
+
+@media screen and (max-width: 780px) {
+    .projects{
+        width:90%;
+    }
+    .project-card-border{
+        min-width:80%;
+        max-height: 80%;
+
+    }
+    .project-card{
+        min-width:80%;
+    }
 }
 
 .contact{
