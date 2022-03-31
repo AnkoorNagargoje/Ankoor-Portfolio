@@ -969,6 +969,7 @@ h1{
     font-size:1.3em;
     background:#202020;
     color: #cbd5e1;
+    padding: 5px;
 }
 .message-input{
     width:95%;
@@ -983,6 +984,7 @@ h1{
     background-color:#202020;
     color: #cbd5e1;
     border-radius:30px;
+    padding:5px;
 }
 .submit-button-div{
     width:95%;
@@ -1024,5 +1026,27 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateY(-5px);
+}
+
+@media screen and (max-width:780px){
+    .contact{
+        width:90%;
+    }
+    .contact-form{
+        width:80%;
+    }
+    .contact-flexbox{
+        flex-flow: column wrap;
+        width:100%
+    }
+    .contact-flexbox div{
+        width:100%;
+    }
+    .submit-button-div{
+        justify-content: center;
+    }
+    .socials{
+        flex-wrap: wrap;
+    }
 }
 
